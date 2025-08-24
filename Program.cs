@@ -22,6 +22,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=XSSDemo}/{action=Vulnerable}/{id?}");
+    pattern: "{controller=SecurityDemo}/{action=SQLVulnerable}/{id?}");
 
 app.Run();

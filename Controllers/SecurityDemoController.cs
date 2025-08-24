@@ -1,10 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Data.SqlClient;
 
 namespace Premosh10.Controllers
 {
     public class SecurityDemoController : Controller
     {
-        private readonly string connectionString = "Server=.;Database=DemoDB;Trusted_Connection=True;";
+        private readonly string connectionString = "Server=(localdb)\\mssqllocaldb;Database=my_db;Trusted_Connection=True;";
         // ---------------- SQL Injection ----------------
         public IActionResult SQLVulnerable(string username)
         {
