@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "CSRF Test";
+}
+<h2>CSRF Test</h2>
+
+<form method="post" action="/SecurityDemo/CSRFTest">
+    @Html.AntiForgeryToken()
+    <input type="text" name="comment" placeholder="Enter comment" />
+    <button type="submit">Submit</button>
+</form>
+
+<p>Comment submitted: @ViewBag.Comment</p>

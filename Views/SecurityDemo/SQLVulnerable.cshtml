@@ -1,0 +1,11 @@
+﻿@{
+    ViewData["Title"] = "SQL Injection Vulnerable";
+}
+<h2>Vulnerable SQL Injection</h2>
+
+<form method="get" action="/SecurityDemo/SQLVulnerable">
+    <input type="text" name="username" placeholder="Enter username" />
+    <button type="submit">Search</button>
+</form>
+
+<p>Result: @ViewBag.Result</p>

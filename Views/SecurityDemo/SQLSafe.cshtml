@@ -1,0 +1,11 @@
+﻿@{
+    ViewData["Title"] = "SQL Injection Safe";
+}
+<h2>Safe SQL Query</h2>
+
+<form method="get" action="/SecurityDemo/SQLSafe">
+    <input type="text" name="username" placeholder="Enter username" />
+    <button type="submit">Search</button>
+</form>
+
+<p>Result: @ViewBag.Result</p>

@@ -1,0 +1,12 @@
+﻿@model Premosh10.ViewModels.CommentViewModel
+@{
+    ViewData["Title"] = "Safe Comment";
+}
+<h2>Safe Comment Example</h2>
+
+<form method="get" action="/XSSDemo/Safe">
+    <input type="text" name="userComment" placeholder="Enter comment" />
+    <button type="submit">Submit</button>
+</form>
+
+<p>User said: @Model.Comment</p>

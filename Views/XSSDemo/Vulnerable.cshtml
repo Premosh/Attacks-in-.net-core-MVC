@@ -1,0 +1,13 @@
+﻿@model Premosh10.ViewModels.CommentViewModel
+@{
+    ViewData["Title"] = "Vulnerable Comment";
+}
+<h2>Vulnerable Comment Example</h2>
+
+<form method="get" action="/XSSDemo/Vulnerable">
+    <input type="text" name="userComment" placeholder="Enter comment" />
+    <button type="submit">Submit</button>
+</form>
+
+<p>User said: @Html.Raw(Model.Comment)</p>
+
